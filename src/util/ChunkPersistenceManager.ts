@@ -1,3 +1,4 @@
+// @ts-expect-error
 import ChunkWorker from "../worker/chunkWorker?worker&inline";
 
 export default class ChunkPersistenceManager {

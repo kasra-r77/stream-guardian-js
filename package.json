@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,10 @@
   },
   "homepage": "https://github.com/kasra-r77/stream-guardian-js#readme",
   "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "happy-dom": "^13.1.4",
     "typescript": "^5.3.3",
-    "vite": "^5.0.10"
+    "vite": "^5.0.10",
+    "vitest": "^1.2.0"
   }
 }

@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import path from "path";
+import typescript from "@rollup/plugin-typescript";
 
 module.exports = defineConfig({
   build: {
@@ -10,8 +11,20 @@ module.exports = defineConfig({
       name: "stream-guardian-js",
       fileName: (format) => `stream-guardian-js.${format}.js`,
     },
+    rollupOptions: {
+      plugins: [
+        typescript({
+          tsconfig: path.resolve(__dirname, "tsconfig.json"),
+        }),
+      ],
+    },
     watch: {
       include: "src/**",
     },
+  },
+  test: {
+    include: ["tests/**/*.test.ts"],
+    globals: true,
+    environment: "happy-dom",
   },
 });

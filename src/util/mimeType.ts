@@ -1,4 +1,4 @@
-const preferredMimeTypesInOrder = [
+export const preferredMimeTypesInOrder = [
   "video/webm;codecs=vp9",
   "video/webm;codecs=vp8",
   "video/webm;codecs=h264",

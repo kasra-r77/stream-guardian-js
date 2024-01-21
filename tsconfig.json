@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
     "target": "ES2020",
+    "types": ["vitest/globals"],
     "useDefineForClassFields": true,
     "module": "NodeNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": false,
     "allowJs": true,
+    "outDir": "dist",
+    "declaration": true,
 
     /* Bundler mode */
     "moduleResolution": "NodeNext",
@@ -20,5 +23,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/**/*", "src/declaration.d.ts"]
+  "include": ["src/**/*"]
 }

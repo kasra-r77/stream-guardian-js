@@ -11,7 +11,7 @@ Stream Guardian JS is a library designed to safeguard streaming content recorded
 
 ## API
 
-Stream Guardian JS provides an API to interact with the stream recording and management functionalities. Below are the details of the API endpoints and their usage.
+Stream Guardian JS provides an API to interact with the stream recording and management functionalities. Below are the details of the APIs and their usage.
 
 ### `constructor`
 

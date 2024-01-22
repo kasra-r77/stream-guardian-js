@@ -1,6 +1,6 @@
 {
   "name": "stream-guardian-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "protects browser streams by writing them into local storage in a recoverable way",
   "main": "./dist/stream-guardian-js.umd.js",
   "module": "./dist/stream-guardian-js.es.js",
@@ -27,5 +27,11 @@
     "vite": "^5.0.10",
     "vite-plugin-dts": "^3.7.1",
     "vitest": "^1.2.0"
-  }
+  },
+  "keywords": [
+    "Stream",
+    "MediaRecorder",
+    "MediaStream",
+    "Browser"
+  ]
 }

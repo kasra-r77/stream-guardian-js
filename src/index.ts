@@ -32,6 +32,14 @@ export default class StreamGuardian {
     );
   }
 
+  pause() {
+    this.recorder.pause();
+  }
+
+  resume() {
+    this.recorder.resume();
+  }
+
   stop() {
     this.recorder.stop();
     this.chunkPersistenceManager.finalize();

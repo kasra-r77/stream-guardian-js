@@ -4,6 +4,7 @@
   "description": "protects browser streams by writing them into local storage in a recoverable way",
   "main": "./dist/stream-guardian-js.umd.js",
   "module": "./dist/stream-guardian-js.es.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -21,10 +22,10 @@
   },
   "homepage": "https://github.com/kasra-r77/stream-guardian-js#readme",
   "devDependencies": {
-    "@rollup/plugin-typescript": "^11.1.6",
     "happy-dom": "^13.1.4",
     "typescript": "^5.3.3",
     "vite": "^5.0.10",
+    "vite-plugin-dts": "^3.7.1",
     "vitest": "^1.2.0"
   }
 }

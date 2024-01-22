@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import path from "path";
-import typescript from "@rollup/plugin-typescript";
+import dts from "vite-plugin-dts";
 
 module.exports = defineConfig({
   build: {
@@ -12,11 +12,7 @@ module.exports = defineConfig({
       fileName: (format) => `stream-guardian-js.${format}.js`,
     },
     rollupOptions: {
-      plugins: [
-        typescript({
-          tsconfig: path.resolve(__dirname, "tsconfig.json"),
-        }),
-      ],
+      plugins: [dts()],
     },
     watch: {
       include: "src/**",
